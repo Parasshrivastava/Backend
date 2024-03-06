@@ -1,16 +1,14 @@
-import mongoose from "mongoose"
-import {DB_NAME} from "./constants"
-import express from "express";
+// require ('dotenv').config({path:'./env'})\\\more optimised code as we use modulle form
 
-const app=express();
-
+import dotenv from"dotenv"
+import connectDB from "./db/index.js"
 
 
+dotenv.config({
+    path:'./env'
+})
 
-
-
-
-
+connectDB()
 
 
 
@@ -31,6 +29,30 @@ const app=express();
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import {DB_NAME} from "./constants"
+// import express from "express";
+   // const app=express();
 // ;(async ()=>{
 //     try{
 //         mongoose.connect(`${process.env.MONGODB_URL}/${DB_NAME}`)
