@@ -22,7 +22,8 @@ const videoSchema=new Schema({
 
     },
     duration:{
-        type:Number,
+        type:Number, 
+        // cloudenary URl
         required:true,
 
     },
@@ -34,7 +35,7 @@ const videoSchema=new Schema({
     },
     isPublished:{
         type:Boolean,
-        required:true,
+        default:true,
 
     },
     owner:{
