@@ -1,6 +1,7 @@
 import {v2 as cloudinary} from "cloudinary"
 import fs from "fs"
 import {v2 as cloudinary} from 'cloudinary';
+import exp from "constants";
           
 cloudinary.config({ 
   cloud_name: process.env.CLOUDINARY_NAME, 
@@ -29,3 +30,4 @@ const uploadOnCloudinary=async (localFilePath)=>
         return null
     }   
 }
+export {uploadOnCloudinary}

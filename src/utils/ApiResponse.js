@@ -10,6 +10,8 @@ class ApiResponse{
     }
 }
 
+export{ApiResponse}
+
 
 
 // information response 100-199
